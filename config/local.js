@@ -28,6 +28,9 @@
  */
 
 module.exports = {
+	host: process.env.NODE_IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
+	port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+	environment: process.env.NODE_ENV || 'development'
 
   /***************************************************************************
    * Your SSL certificate and key, if you want to be able to serve HTTP      *

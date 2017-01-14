@@ -11,6 +11,9 @@
  */
 
 module.exports = {
+	log: {
+		level: 'silent'
+	}
 
   /***************************************************************************
    * Set the default database connection for models in the production        *
