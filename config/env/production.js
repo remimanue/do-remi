@@ -14,7 +14,7 @@ module.exports = {
 	connections: {
 		mongodbServer: {
 	     adapter: 'sails-mongo',
-	     host: 'do-mongodb',
+	     host: process.env.MONGODB_USER ? 'do-mongodb' : 'localhost',
 	     port: 27017,
 	     user: process.env.MONGODB_USER || '',
 	     password: process.env.MONGODB_PASSWORD || '',
@@ -26,29 +26,9 @@ module.exports = {
 	log: {
 		level: 'silent'
 	},
+	models: {
+		connection: 'mongodbServer',
+		migrate: 'safe'
+	},
 	port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
-
-  /***************************************************************************
-   * Set the default database connection for models in the production        *
-   * environment (see config/connections.js and config/models.js )           *
-   ***************************************************************************/
-
-  // models: {
-  //   connection: 'someMysqlServer'
-  // },
-
-  /***************************************************************************
-   * Set the port in the production environment to 80                        *
-   ***************************************************************************/
-
-  // port: 80,
-
-  /***************************************************************************
-   * Set the log level in production environment to "silent"                 *
-   ***************************************************************************/
-
-  // log: {
-  //   level: "silent"
-  // }
-
 };
