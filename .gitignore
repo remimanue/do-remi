@@ -107,5 +107,5 @@ logs
 .nyc_output
 .lock-wscript
 
-.bak
-.new
+*.bak
+*.new
