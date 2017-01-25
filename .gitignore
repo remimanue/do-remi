@@ -37,7 +37,7 @@ dist
 #    development.
 #
 ################################################
-config/local.js
+# config/local.js
 
 ################################################
 # Dependencies
@@ -106,3 +106,6 @@ logs
 .node_repl_history
 .nyc_output
 .lock-wscript
+
+.bak
+.new
