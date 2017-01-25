@@ -34,5 +34,5 @@ module.exports = {
 		// connection: 'mongodbServer',
 		migrate: 'safe'
 	},
-	port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 1337,
+	port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
 };
