@@ -30,8 +30,8 @@ module.exports = {
 		level: 'silent'
 	},
 	models: {
-		connection: 'localDiskDb',
-		// connection: 'mongodbServer',
+		// connection: 'localDiskDb',
+		connection: 'mongodbServer',
 		migrate: 'safe'
 	},
 	port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
