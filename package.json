@@ -2,10 +2,22 @@
   "name": "do-remi",
   "private": true,
   "version": "0.0.0",
+  "author": "remi",
+  "license": "",
   "description": "a Sails application",
   "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/remimanue/do-remi.git"
+  },
+  "main": "app.js",
+  "scripts": {
+    "clean:node": "rimraf node_modules && npm cache clean",
+    "debug": "node debug app.js",
+    "reinstall": "npm run clean:node && npm install --depth 0",
+    "start": "node app.js"
+  },
   "dependencies": {
-    "bootstrap": "^3.3.7",
     "ejs": "2.3.4",
     "grunt": "1.0.1",
     "grunt-contrib-clean": "1.0.0",
@@ -21,18 +33,11 @@
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
     "rc": "1.0.1",
-    "sails": "~0.12.10",
-    "sails-disk": "~0.10.9"
+    "sails": "^0.12.11",
+    "sails-mongo": "^0.12.2"
   },
-  "scripts": {
-    "debug": "node debug app.js",
-    "start": "node app.js"
-  },
-  "main": "app.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/remimanue/do-remi.git"
-  },
-  "author": "remi",
-  "license": ""
+  "devDependencies": {
+    "rimraf": "^2.5.4",
+	 "sails-disk": "~0.10.10"
+  }
 }

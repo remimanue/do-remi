@@ -27,10 +27,35 @@
  * http://sailsjs.org/#!/documentation/anatomy/myApp/config/local.js.html
  */
 
+/*
+The following service(s) have been created in your project: do-mongodb.
+
+Username: userELH
+Password: WwqNHSFvvH5A7oMP
+Database Name: do-db
+Connection URL: mongodb://userELH:WwqNHSFvvH5A7oMP@do-mongodb/do-db
+
+MONGODB_USER, MONGODB_PASSWORD, MONGODB_ADMIN_PASSWORD, MONGODB_DATABASE
+
+For more information about using this template,
+including OpenShift considerations,
+see https://github.com/sclorg/mongodb-container/blob/master/3.2/README.md.
+*/
+
 module.exports = {
-	host: process.env.NODE_IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
-	port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
-	environment: process.env.NODE_ENV || 'development'
+	// connections: {
+	// 	mongodbServer: {
+	//      adapter: 'sails-mongo',
+	//      host: 'do-mongodb',
+	//      port: 27017,
+	//      user: MONGODB_USER || '',
+	//      password: MONGODB_PASSWORD || '',
+	//      database: MONGODB_DATABASE || 'do-db'
+	//    },
+	// },
+	// host: process.env.NODE_IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
+	// port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+	// environment: process.env.NODE_ENV || 'development'
 
   /***************************************************************************
    * Your SSL certificate and key, if you want to be able to serve HTTP      *

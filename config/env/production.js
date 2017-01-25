@@ -11,9 +11,22 @@
  */
 
 module.exports = {
+	connections: {
+		mongodbServer: {
+	     adapter: 'sails-mongo',
+	     host: 'do-mongodb',
+	     port: 27017,
+	     user: process.env.MONGODB_USER || '',
+	     password: process.env.MONGODB_PASSWORD || '',
+	     database: process.env.MONGODB_DATABASE || 'do-db'
+	   },
+	},
+	environment: process.env.NODE_ENV || 'development',
+	host: process.env.NODE_IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',
 	log: {
 		level: 'silent'
-	}
+	},
+	port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
 
   /***************************************************************************
    * Set the default database connection for models in the production        *
