@@ -20,12 +20,7 @@ module.exports.bootstrap = function(cb) {
 			sails.log('err', err);
 			if (err) return cb();
 			sails.log('records', records)
-			sails.models.user.find().exec(function (err, records) {
-				sails.log('err', err);
-				if (err) return cb();
-				sails.log('records', records)
-				cb();
-			});
+			cb();
 		});
 	});
 

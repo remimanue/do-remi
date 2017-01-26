@@ -35,12 +35,10 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-  '/index': {
-    view: 'index'
-  },
-  '/about': {
-	 view: 'about'
-  }
+  '/index': 'PageController.index',
+  '/home': 'PageController.home',
+  '/about': 'PageController.about',
+  '/user': 'PageController.user'
 
 
   /***************************************************************************

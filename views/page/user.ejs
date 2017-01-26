@@ -1,0 +1,12 @@
+<section>
+	<hgroup>
+		<h1>Users</h1>
+		<p></p>
+	</hgroup>
+	<section>
+		<h2>Liste</h2>
+		<% _.forEach(users, function(user) { %>
+			<%= JSON.stringify(user) %>
+		<% }) %>
+	</section>
+</section>
