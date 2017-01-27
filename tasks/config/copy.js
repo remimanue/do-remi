@@ -22,19 +22,19 @@
 module.exports = function(grunt) {
 
   grunt.config.set('copy', {
-	  fonts: {
-		 files: [{
-			 expand: true,
-			 cwd: './node_modules/bootstrap/fonts',
-			 src: ['*.*'],
-			 dest: 'assets/fonts'
-		 }, {
-			 expand: true,
-			 cwd: './node_modules/font-awesome/fonts',
-			 src: ['*.*'],
-			 dest: 'assets/fonts'
-		 }]
-	  },
+	//   fonts: {
+	// 	 files: [{
+	// 		 expand: true,
+	// 		 cwd: './node_modules/bootstrap/fonts',
+	// 		 src: ['*.*'],
+	// 		 dest: 'assets/fonts'
+	// 	 }, {
+	// 		 expand: true,
+	// 		 cwd: './node_modules/font-awesome/fonts',
+	// 		 src: ['*.*'],
+	// 		 dest: 'assets/fonts'
+	// 	 }]
+	//   },
     dev: {
       files: [{
         expand: true,
