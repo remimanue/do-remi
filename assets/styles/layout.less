@@ -1,0 +1,161 @@
+@import 'colors';
+
+/* The html and body elements cannot have any padding or margin.
+ * The margin property can have from one to four values.
+    margin: 25px 50px 75px 100px;
+        top margin is 25px
+        right margin is 50px
+        bottom margin is 75px
+        left margin is 100px
+    margin: 25px 50px 75px;
+        top margin is 25px
+        right and left margins are 50px
+        bottom margin is 75px
+    margin: 25px 50px;
+        top and bottom margins are 25px
+        right and left margins are 50px
+    margin: 25px;
+        all four margins are 25px
+ */
+html,
+body {
+	min-height: 100%;
+	height: auto !important;
+	margin: 0px auto -30px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+//	background-color: @green;
+}
+header {
+	nav {
+		.navbar-right {
+			margin-right: 10px;
+			a {
+				margin-right: 15px;
+			}
+		}
+	}
+}
+//@bgDefault      : #23112b;
+//@bgHighlight    : #2221e3;
+//@colDefault     : #ecf0f1;
+//@colHighlight   : #ecdbff;
+//@dropDown       : true;
+//
+//.ddm() when (@dropDown) {
+//  > .dropdown-menu {
+//    background-color: @black;
+//    > li > a {
+//      color: @colDefault;
+//      &:hover,  &:focus {
+//        color: @colHighlight;
+//        background-color: @bgHighlight; }}
+//    .divider {
+//      background-color: @bgHighlight;}}}
+//.navbar-default {
+//  background-color: @black;
+//  border-color: @bgHighlight;
+//  .navbar-brand {
+//    color: @colDefault;
+//    &:hover, &:focus { 
+//      color: @colHighlight; }}
+//  .navbar-text {
+//    color: @colDefault; }
+//  .navbar-nav {
+//    > li {
+//      > a {
+//        color: @colDefault;
+//        &:hover,  &:focus {
+//          color: @colHighlight; }}
+//      .ddm }
+//    > .active {
+//      > a, > a:hover, > a:focus {
+//        color: @colHighlight;
+//        background-color: @bgHighlight; }}
+//    > .open {
+//      > a, > a:hover, > a:focus {
+//        color: @colHighlight;
+//        background-color: @bgHighlight; }}}
+//  .navbar-toggle {
+//    border-color: @bgHighlight;
+//    &:hover, &:focus {
+//      background-color: @bgHighlight; }
+//    .icon-bar {
+//      background-color: @colDefault; }}
+//  .navbar-collapse,
+//  .navbar-form {
+//    border-color: @colDefault; }
+//  .navbar-link {
+//    color: @colDefault;
+//    &:hover {
+//      color: @colHighlight; }}}
+//@media (max-width: 767px) {
+//  .navbar-default .navbar-nav .open .dropdown-menu {
+//    > li > a {
+//      color: @colDefault;
+//      &:hover, &:focus {
+//        color: @colHighlight; }}
+//    > .active {
+//      > a, > a:hover, > a:focus {
+//        color: @colHighlight;
+//        background-color: @bgHighlight; }}}
+//}
+
+footer {
+	display: table-cell;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 30px;
+	width: 100%;
+	background-color: @black;
+	color: @gray;
+	div {
+		height: 28px;
+	    line-height:28px;
+		vertical-align: middle;
+		margin: 0px 10px;
+		a {
+			color: @gray-light;
+			&:hover { color: @blue; }
+		}
+	}
+}
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+	#footer {
+//		margin-left: -20px;
+//		margin-right: -20px;
+//		padding-left: 20px;
+//		padding-right: 20px;
+	}
+}
+
+// cacher les blocks erreurs
+.form-group .help-block {
+	display: none;
+}
+// montrer les blocks erreurs
+.form-group.has-error .help-block {
+	display: block;
+}
+// montrer les blocks success
+.form-group.has-success .help-block {
+	display: block;
+}
+// montrer les blocks success
+.form-group.has-warning .help-block {
+	display: block;
+}
+// montrer les blocks success
+.form-group.has-danger .help-block {
+	display: block;
+}
+// montrer les blocks success
+.form-group.has-info .help-block {
+	display: block;
+}
+// cacher les boutons désactivés
+button:disabled {
+	display: none;
+}

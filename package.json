@@ -18,7 +18,9 @@
     "start": "node app.js"
   },
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "ejs": "2.3.4",
+    "font-awesome": "^4.7.0",
     "grunt": "1.0.1",
     "grunt-contrib-clean": "1.0.0",
     "grunt-contrib-coffee": "1.0.0",
@@ -34,7 +36,7 @@
     "include-all": "^1.0.0",
     "rc": "1.0.1",
     "sails": "^0.12.11",
-	 "sails-disk": "~0.10.10",
+    "sails-disk": "~0.10.10",
     "sails-mongo": "^0.12.2"
   },
   "devDependencies": {
