@@ -27,12 +27,12 @@ module.exports = function(grunt) {
 			 expand: true,
 			 cwd: './node_modules/bootstrap',
 			 src: ['fonts/*.*'],
-			 dest: 'assets'
+			 dest: '.tmp/public'
 		 }, {
 			 expand: true,
 			 cwd: './node_modules/font-awesome',
 			 src: ['fonts/*.*'],
-			 dest: 'assets'
+			 dest: '.tmp/public'
 		 }]
 	  },
     dev: {

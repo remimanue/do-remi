@@ -12,7 +12,8 @@
   },
   "main": "app.js",
   "scripts": {
-    "clean:node": "rimraf node_modules && npm cache clean",
+    "oc:build": "oc start-build do-server --build-loglevel=5 -F --wait",
+	 "clean:node": "rimraf node_modules && npm cache clean",
     "debug": "node debug app.js",
     "reinstall": "npm run clean:node && npm install --depth 0",
     "start": "node app.js"

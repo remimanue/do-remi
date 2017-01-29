@@ -32,7 +32,7 @@ module.exports = {
 	models: {
 		// connection: 'localDiskDb',
 		connection: 'mongodbServer',
-		migrate: 'safe'
+		migrate: 'alter'
 	},
 	port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
 };
