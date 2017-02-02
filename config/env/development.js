@@ -18,7 +18,8 @@ module.exports = {
 		mongodbServer: {
 	     adapter: 'sails-mongo',
 	     host: 'localhost',
-	     port: 27017
+	     port: 27017,
+		  database: process.env.MONGODB_DATABASE || 'sampledb'
 	   },
 		fakeServer: {
 	     adapter: 'sails-mongo',
@@ -37,4 +38,15 @@ module.exports = {
 		migrate: 'alter'
 	},
 	port: process.env.NODE_PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
+	session: {
+		adapter: 'mongo',
+		url: 'mongodb://localhost/sampledb', // user, password and port optional
+		collection: 'sessions',
+		stringify: true,
+	   // mongoOptions: {
+	   //   server: {
+	   //     ssl: true
+	   //   }
+	   // }
+	}
 };

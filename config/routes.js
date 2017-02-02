@@ -32,9 +32,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  },
+  '/': 'PageController.index',
   '/index': 'PageController.index',
   '/home': 'PageController.home',
   '/about': 'PageController.about',

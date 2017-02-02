@@ -12,7 +12,7 @@ module.exports = {
   index: function (req, res) {
 	  var page = req.params;
 	  sails.log('params', req.params);
-	  return res.redirect('home');
+	  return res.view();
   },
 
   /**
